@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vivero</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="formulario">
+        <div id="hora">hora : </div>
+        <!-- <script>
+            function fecha(){
+                var fecha = new Date();
+                var hora = fecha.getHours();
+                var minuto = fecha.getMinutes();
+                var segundos = fecha.getSeconds();
+
+                document.getElementById("hora").innerHTML ="hora: " +  hora + ":" + minuto + ":" + segundos;
+            }
+            setInterval(fecha, 1000);
+        </script>
+          -->
+        <h2>Formulario de Compra</h2>
+        <div class="formulario-item">
+        <label for="tarjeta">Número de Tarjeta:</label>
+        <input type="number" id="tarjeta" name="tarjeta" required>
+        <br>
+        <label for="valor-compra">Valor de la compra:</label>
+        <input type="number" id="valor-compra" name="valor-compra" required>
+        <br>
+        <label for="codigo-postal">Código Postal:</label>
+        <input type="text" id="codigo-postal" name="codigo-postal" required>
+        </div>
+        <div class="puntos">
+            <h3>Puntos Compra</h3>
+            <label for="puntos-compra">Puntos:</label>
+            <input type="number" id="puntos-compra" name="puntos-compra" readonly>
+            <br>
+            <label for="puntos-acumulados">Puntos Acumulados:</label>
+            <input type="number" id="puntos-acumulados" name="puntos-acumulados" readonly>
+        </div>
+        
+        <div class="botoines">
+            <button type="button" id="limpiar">Limpiar</button>
+            <button type="button" id="imprimir">Imprimir</button>
+            <button type="button" id="sesion">Sesi&oacuten</button>
+        </div>        
+    </div>
+<script src="./java.js"></script>
+</body>
+</html>

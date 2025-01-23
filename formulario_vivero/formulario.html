@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECHION</title>
+</head>
+<body>
+    <div id="access-panel">
+        <h1>Accede a tu cuenta</h1>
+        <form onsubmit="event.preventDefault(); signIn();">
+            <div>
+                <label for="login-user">Nombre de usuario</label>
+                <input type="text" id="login-user" placeholder="Escribe tu usuario" required>
+            </div>
+            <div>
+                <label for="login-pass">Clave</label>
+                <input type="password" id="login-pass" placeholder="Escribe tu clave" required>
+            </div>
+            <div>
+                <button type="submit">Entrar</button>
+                <button type="button" onclick="alert('Acceso cancelado')">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
